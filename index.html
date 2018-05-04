@@ -10,17 +10,21 @@
     <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0-beta.2/webcomponents-bundle.js"></script> -->
   </head>  
 <body>
-  <my-element></my-element>
+  <my-element mood="happy"></my-element>
   
   <!-- Works only on browsers that support Javascript modules like Chrome, Safari, Firefox 60, Edge 17 -->
   <script type="module">
-    import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element@0.4.0/lit-element.js?module';
+    import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
 
     class MyElement extends LitElement {
-      _render() {
-        return html`Hey LitElement!`;
-      };
+
+      static get properties() { return { mood: String }}
+
+      _render({mood}) {
+        return html`You are ${mood} today!`;
+      }
     }
+
     customElements.define('my-element', MyElement);
   </script>
 
