@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- uncomment for polyfill (needed for Firefox and Edge) -->
-    <!-- <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0-beta.2/webcomponents-bundle.js"></script> -->
+    <!-- Polyfills only needed for Firefox and Edge. -->
+  <script src="./node_modules/@webcomponents/webcomponentsjs@next/webcomponents-loader.js"></script>
   </head>  
 <body>
   <my-element mood="happy"></my-element>
   
-  <!-- Works only on browsers that support Javascript modules like Chrome, Safari, Firefox 60, Edge 17 -->
   <script type="module">
-    import {LitElement, html} from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
+    import {LitElement, html} from '@polymer/lit-element';
 
     class MyElement extends LitElement {
 

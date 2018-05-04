@@ -1,0 +1,16 @@
+{
+  "name": "hello-lit-element",
+  "version": "0.0.1",
+  "description": "Sample-lit-element",
+  "scripts": {
+    "start": "polymer serve --module-resolution=node"
+  },
+  "dependencies": {
+    "@polymer/lit-element": "latest",
+    "polymer-cli": "next",
+    "@webcomponents/webcomponentsjs": "next"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
