@@ -10,7 +10,7 @@
     <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   </head>  
 <body>
-  <my-element mood="happy"></my-element>
+  <my-element mood="great"></my-element>
   
   <script type="module">
     import {LitElement, html} from '@polymer/lit-element';
@@ -20,13 +20,17 @@
       static get properties() { return { mood: String }}
 
       _render({mood}) {
-        return html`You are ${mood} today!`;
+        return html`<style> .mood { color: green; } </style>
+          Web Components are <span class="mood">${mood}</span>!`;
       }
+      
     }
 
     customElements.define('my-element', MyElement);
   </script>
 
+  
+  
   <!-- include the Glitch button to show what the webpage is about and
         to make it easier for folks to view source and remix -->
   <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
