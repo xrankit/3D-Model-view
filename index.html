@@ -17,11 +17,15 @@
 
     class MyElement extends LitElement {
 
-      static get properties() { return { mood: String }}
+      static get properties() { 
+        return {
+          mood: {type: String}
+        }
+      }
 
-      _render({mood}) {
+      render() {
         return html`<style> .mood { color: green; } </style>
-          Web Components are <span class="mood">${mood}</span>!`;
+          Web Components are <span class="mood">${this.mood}</span>!`;
       }
       
     }

@@ -6,9 +6,9 @@
     "start": "polymer serve --module-resolution=node"
   },
   "dependencies": {
-    "@polymer/lit-element": "latest",
+    "@polymer/lit-element": "dev",
     "polymer-cli": "next",
-    "@webcomponents/webcomponentsjs": "next"
+    "@webcomponents/webcomponentsjs": "latest"
   },
   "engines": {
     "node": "8.x"
