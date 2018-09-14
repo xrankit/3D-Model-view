@@ -1,5 +1,5 @@
 dependencies:
-  '@polymer/lit-element': 0.6.0-dev.6
+  '@polymer/lit-element': 0.6.0
   '@webcomponents/webcomponentsjs': 2.1.1
   polymer-cli: 1.7.0-pre.16
 packages:
@@ -631,12 +631,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-zDFW4CqQq7kmg8BfX8exmnaCtQ0vDbAkkiemrBRRLZNfrNtKwqzh9EthoJTyRKCZ7yebpR7U8ksNvTB5kR/uOQ==
-  /@polymer/lit-element/0.6.0-dev.6:
+  /@polymer/lit-element/0.6.0:
     dependencies:
-      lit-html: 0.11.1
+      lit-html: 0.11.3
     dev: false
     resolution:
-      integrity: sha512-f0qPKjDzkcew36COMrNZqOstnCNuxiAontFdBSyWXcdMve5WenDj6dViMnraNXaYWWV/Vg7/18KroB/Lpix1AQ==
+      integrity: sha512-9Agca2zlw61WCkKjp0jsz90FwQ1SGwWRJePQQtydlBkjxZ6P1O2uY6x6eLhIPScZ8vgklKRhvrx2xNX3QgMl4g==
   /@polymer/sinonjs/1.17.1:
     dev: false
     resolution:
@@ -4801,10 +4801,10 @@ packages:
       node: '>= 0.6.3'
     resolution:
       integrity: sha1-9plf4PggOS9hOWvolGJAe7dxaOQ=
-  /lit-html/0.11.1:
+  /lit-html/0.11.3:
     dev: false
     resolution:
-      integrity: sha512-G75eIx+aZ3nVFdjfKmama0OXHmvxn8slouEGKz14/D9WPdh+iN1mxZujx001w5M2Ot+39qx+xpcBjqSo1+am5Q==
+      integrity: sha512-udv1BARKZDXVyul+MUTfg1U75UdqDgXf4kXQMs0Nz1qrlqKzQT8Ty4mn7+09sFcbInCWi3sLX4KiWyEHjVskZA==
   /load-json-file/1.1.0:
     dependencies:
       graceful-fs: 4.1.11
@@ -8264,6 +8264,6 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@polymer/lit-element': dev
+  '@polymer/lit-element': ^0.6.0
   '@webcomponents/webcomponentsjs': latest
   polymer-cli: next
