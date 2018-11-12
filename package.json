@@ -6,9 +6,10 @@
     "start": "polymer serve --module-resolution=node"
   },
   "dependencies": {
-    "@polymer/lit-element": "^0.6.0",
-    "polymer-cli": "next",
-    "@webcomponents/webcomponentsjs": "latest"
+    "@GoogleWebComponents/model-element": "^0.0.1",
+    "@webcomponents/webcomponentsjs": "latest",
+    "intersection-observer": "^0.5.1",
+    "resize-observer-polyfill": "^1.5.0"
   },
   "engines": {
     "node": "8.x"
