@@ -25,15 +25,37 @@
     <script src="http://localhost:8000/dist/model-viewer-element.js"></script>
     
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
+      }
+      
       model-viewer {
-        width: 400px;
-        height: 300px;
+        width: 100%;
+        height: 400px;
+      }
+      
+      #card {
+        margin: 3em auto;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 500px;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
       }
     </style>
   </head> 
 <body>
-
-  <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/vf1a.glb?1541990041395" background-color="#4885ed" controls auto-rotate></model-viewer>
-  <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/model.gltf?1541991971717" background-color="#4885ed" controls auto-rotate></model-viewer>
+  <div id="card">
+    <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/vf1a.glb?1541992543297"
+                  background-color="#4885ed"
+                  controls
+                  auto-rotate>
+    </model-viewer>
+  </div>
 </body>
 </html>
