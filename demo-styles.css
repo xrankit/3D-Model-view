@@ -37,6 +37,11 @@ model-viewer {
   height: 2em;
 }
 
+.attribution .cc {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;
