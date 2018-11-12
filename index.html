@@ -15,46 +15,18 @@
     <!-- Resize Observer polyfill is required for non-Chrome browsers: -->
     <script src="./node_modules/resize-observer-polyfill/dist/ResizeObserver.js"></script>
 
-    <!-- Intersection Observer polyfill is required for Safari and IE11 -->
-    <script src="./node_modules/intersection-observer/intersection-observer.js"></script>
+    <!-- Intersection Observer polyfill is required for Safari and IE11: -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
 
     <!-- Fullscreen polyfill is required for using experimental AR features in Canary: -->
-    <script src="./node_modules/fullscreen-polyfill/dist/fullscreen.polyfill.js"></script>
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+    
+    <!-- And finally, the model-viewer bundle: -->
+    <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer-element.js"></script>
   </head>  
 <body>
-  <my-element mood="great" enhance></my-element>
-  
-  <script type="module">
-    import {LitElement, html} from '@polymer/lit-element';
 
-    class MyElement extends LitElement {
+  <model-viewer src=""></model-viewer>
 
-      static get properties() { 
-        return {
-          mood: {type: String},
-          enhance: {type: Boolean}
-        }
-      }
-
-      render() {
-        console.log(this.enhance);
-        return html`<style> .mood { color: green; } </style>
-          Web Components are <span class="mood">${this.mood} ${this.enhance}</span>!`;
-      }
-      
-    }
-
-    customElements.define('my-element', MyElement);
-    
-    document.querySelector('my-element').removeAttribute('mood');
-        document.querySelector('my-element').removeAttribute('enhance');
-  </script>
-
-  
-  
-  <!-- include the Glitch button to show what the webpage is about and
-        to make it easier for folks to view source and remix -->
-  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-  <script src="https://button.glitch.me/button.js"></script>
 </body>
 </html>
