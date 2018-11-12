@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="demo-styles.css">
+    
     <!-- The following libraries and polyfills are recommended to maximize browser support -->
     <!-- NOTE: you must adjust the paths as appropriate for your project -->
 
@@ -23,47 +25,6 @@
     
     <!-- And finally, the model-viewer bundle: -->
     <script src="http://localhost:8000/dist/model-viewer-element.js"></script>
-    
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
-        color: #244376;
-      }
-      
-      
-      #card {
-        margin: 3em auto;
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        border-radius: 6px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-        overflow: hidden;
-      }
-      
-      model-viewer {
-        width: 100%;
-        height: 400px;
-      }
-      
-      .attribution {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 1em;
-      }
-      
-      .attribution h1 {
-        margin: 0 0 0.25em;
-      }
-      
-      .attribution img {
-        opacity: 0.5;
-        height: 2em;
-      }
-    </style>
   </head> 
 <body>
   <div id="card">
@@ -78,14 +39,15 @@
         <h1>SD Macross VF-1A Super Hikaru</h1>
         <span>By <a href="https://poly.google.com/user/8ri62AdjHrC" target="_blank">Tipatat Chennavasin</a></span>
       </span>
-      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
+      <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"></a>
     </section>
     
   </div>
   
   
-    <footer>
-      <span>This page is a basic demo of the <a href="https://github.com/GoogleWebComponents/model-viewer">&lt;model-viewer&gt;</a> web component. Use &lt;model-viewer&gt; to easily display 3D and AR content on the web!</span>
-    </footer>
+  <footer>
+    <span>This page is a basic demo of the <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
+    <span>It makes displaying 3D and AR content on the web easy ✌️</span>
+  </footer>
 </body>
 </html>
